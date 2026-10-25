@@ -1,0 +1,42 @@
+:root {
+  --bg-dark: #0a0a0a;
+  --bg-panel: rgba(20, 20, 20, 0.7);
+  --primary-red: #ff0000;
+  --primary-red-hover: #cc0000;
+  --text-main: #ffffff;
+  --text-muted: #a0a0a0;
+  --glass-border: rgba(255, 0, 0, 0.2);
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: var(--bg-panel);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px rgba(255, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--primary-red);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-red-hover);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
